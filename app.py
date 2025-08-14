@@ -22,11 +22,11 @@ def upload_photo():
         return_value = ""
         for index, score in enumerate(outputs[0]):
             if index == 0:
-                return_value += f"Label: Sedan, score: {score:.5f}"
+                return_value += f"Label: Sedan, score: {score:.5f}" + "\n"
             elif index == 1:
-                return_value += f"Label: SUV, score: {score:.5f}"
+                return_value += f"Label: SUV, score: {score:.5f}" + "\n"
             else:
-                return_value += f"Label: Truck, score: {score:.5f}"
+                return_value += f"Label: Truck, score: {score:.5f}" + "\n"
 
         return return_value
 
