@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>Car Classifier</h1>
+<form action="/upload-photo" method="post" enctype="multipart/form-data">
+    <label for="photo-upload">Select Photo of a Car:</label>
+    <input type="file" id="photo-upload" name="user_photo" accept="image/*"> <br>
+    <input type="submit" value="Upload Photo">
+</form>
+{% endblock %}
